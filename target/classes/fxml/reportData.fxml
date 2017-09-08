@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.todo.controllers.GetRepornData">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="800.0" />
+      <TableView fx:id="tableReport" prefHeight="248.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="okpo" prefWidth="75.0" text="ЕСН" />
+            <TableColumn fx:id="soato" prefWidth="75.0" text="Соато" />
+            <TableColumn fx:id="rai" prefWidth="75.0" text="Район" />
+            <TableColumn fx:id="nalog" prefWidth="75.0" text="ОКЮЛП" />
+            <TableColumn fx:id="name" prefWidth="75.0" text="Наименование организации" />
+            <TableColumn fx:id="form" prefWidth="75.0" text="Форма" />
+            <TableColumn fx:id="period" prefWidth="75.0" text="Период" />
+            <TableColumn fx:id="vid_disturb" prefWidth="75.0" text="Нарушение" />
+            <TableColumn fx:id="FactDatePredst" prefWidth="75.0" text="Фактическая дата предоставления" />
+            <TableColumn fx:id="DateForResp" prefWidth="75.0" text="Дата для респондента" />
+            <TableColumn fx:id="DateForGSU" prefWidth="75.0" text="Дата для ГСУ" />
+            <TableColumn fx:id="DateForBelstat" prefWidth="75.0" text="Дата для белстата" />
+            <TableColumn fx:id="factAdr" prefWidth="75.0" text="Адрес" />
+            <TableColumn fx:id="phone" prefWidth="75.0" text="Телефон" />
+            <TableColumn fx:id="email" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="otdel" prefWidth="75.0" text="Справочно: Отдел" />
+            <TableColumn fx:id="Comment" prefWidth="75.0" text="Комментарий" />
+        </columns>
+      </TableView>
+      <Label layoutX="42.0" layoutY="277.0" text="Окпо" />
+      <TextField fx:id="txtOkpo" layoutX="93.0" layoutY="273.0" prefHeight="25.0" prefWidth="113.0" />
+      <Button fx:id="getFiltredData" layoutX="618.0" layoutY="331.0" mnemonicParsing="false" text="Поиск" />
+      <ComboBox fx:id="comboForms" layoutX="325.0" layoutY="273.0" prefWidth="150.0" />
+      <Label layoutX="251.0" layoutY="277.0" text="Форма" />
+      <Button fx:id="export" onAction="#getPathForSave" layoutX="475.0" layoutY="331.0" mnemonicParsing="false" text="Экспорт в Excel" />
+   </children>
+</AnchorPane>

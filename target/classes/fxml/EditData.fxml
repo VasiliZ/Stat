@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.todo.controllers.EditData">
+   <children>
+      <Button onAction="#hideEditComment" layoutX="384.0" layoutY="574.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Отмена" />
+      <Button onAction="#saveEditData" layoutX="308.0" layoutY="574.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="ОК" />
+      <Label fx:id="LabelTxt" layoutX="82.0" layoutY="36.0" prefHeight="17.0" prefWidth="78.0" />
+      <Label layoutX="28.0" layoutY="62.0" text="ОКПО" />
+      <Label layoutX="30.0" layoutY="85.0" text="Детализация" />
+      <Label layoutX="29.0" layoutY="110.0" text="Дата модификации" />
+      <Label layoutX="29.0" layoutY="138.0" text="Вид представления" />
+      <Label layoutX="28.0" layoutY="188.0" text="Последний вид представления" />
+      <Label layoutX="29.0" layoutY="214.0" text="Количество корректировок" />
+      <Label layoutX="28.0" layoutY="239.0" text="Первичный вид представления" />
+      <Label layoutX="28.0" layoutY="264.0" text="Номер пачки" />
+      <Label layoutX="28.0" layoutY="289.0" text="Стат орган" />
+      <Label layoutX="28.0" layoutY="312.0" text="Контактная информация" />
+      <Label layoutX="28.0" layoutY="337.0" text="Тел. номер" />
+      <Label layoutX="28.0" layoutY="361.0" text="Email" />
+      <Label layoutX="28.0" layoutY="386.0" text="Дата передачи для респондента" />
+      <Label layoutX="28.0" layoutY="412.0" text="Дата передачи на ГСУ" />
+      <Label layoutX="28.0" layoutY="438.0" text="Дата передачи на Белстат" />
+      <Label layoutX="28.0" layoutY="464.0" text="Примечание" />
+      <TextField fx:id="FieldComments" layoutX="323.0" layoutY="473.0" prefHeight="62.0" prefWidth="251.0" />
+      <Label fx:id="LabelOKPO" layoutX="324.0" layoutY="61.0" text="Label" />
+      <Label fx:id="LabelDetails" layoutX="324.0" layoutY="84.0" text="Label" />
+      <Label fx:id="LabelDateModify" layoutX="324.0" layoutY="109.0" text="Label" />
+      <Label fx:id="LabelVidPredst" layoutX="324.0" layoutY="137.0" text="Label" />
+      <Label fx:id="LabelDatefistPredst" layoutX="324.0" layoutY="162.0" text="Label" />
+      <Label fx:id="LabelLastVid" layoutX="324.0" layoutY="187.0" text="Label" />
+      <Label fx:id="LabelnumdofCorrect" layoutX="324.0" layoutY="213.0" text="Label" />
+      <Label fx:id="LabelfirstVidPredst" layoutX="324.0" layoutY="238.0" text="Label" />
+      <Label fx:id="LabelnumbPac" layoutX="324.0" layoutY="263.0" text="Label" />
+      <Label fx:id="LabelstatOrg" layoutX="324.0" layoutY="288.0" text="Label" wrapText="true" />
+      <Label fx:id="Labelcontact" layoutX="324.0" layoutY="311.0" text="Label" wrapText="true" />
+      <Label fx:id="LabeltelNumber" layoutX="324.0" layoutY="336.0" text="Label" wrapText="true" />
+      <Label fx:id="Labelemail" layoutX="324.0" layoutY="360.0" text="Label" wrapText="true" />
+      <Label fx:id="LabeltimeResp" layoutX="324.0" layoutY="385.0" text="Label" />
+      <Label fx:id="LabeltimeGSU" layoutX="324.0" layoutY="411.0" text="Label" />
+      <Label fx:id="LabeltimeBelstat" layoutX="324.0" layoutY="437.0" text="Label" />
+      <Label layoutX="29.0" layoutY="163.0" text="Дата первого представления" />
+   </children>
+</AnchorPane>

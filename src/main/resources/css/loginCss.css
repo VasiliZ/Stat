@@ -1,0 +1,8 @@
+.root {
+    -fx-background-image: url('image/background.jpg');
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+}

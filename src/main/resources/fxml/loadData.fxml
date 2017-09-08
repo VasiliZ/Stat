@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.todo.controllers.LoadData">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+             <Button fx:id="button" layoutX="449.0" layoutY="204.0" mnemonicParsing="false" onAction="#clicked" prefHeight="40.0" prefWidth="100.0" text="Выбрать файл" />
+             <Label layoutX="31.0" layoutY="236.0" text="Выберите файл" />
+             <TextField fx:id="pathField" layoutX="180.0" layoutY="204.0" prefHeight="40.0" prefWidth="240.0" />
+             <Label layoutX="31.0" layoutY="273.0" text="Количество загруженных записей:" />
+             <Label fx:id="countLabel" layoutX="247.0" layoutY="273.0" prefHeight="17.0" prefWidth="30.0" text="тут!" />
+             <Button fx:id="loadToDB" layoutX="563.0" layoutY="204.0" mnemonicParsing="false" onAction="#loadData" prefHeight="40.0" prefWidth="100.0" text="Загрузить" />
+             <Button fx:id="windowClose" layoutX="563.0" layoutY="290.0" mnemonicParsing="false" onAction="#close"  prefHeight="40.0" prefWidth="100.0" text="Выход" />
+             <ComboBox fx:id="comboForm" layoutX="269.0" layoutY="17.0" prefWidth="150.0" />
+             <DatePicker fx:id="timeForRespondent" layoutX="29.0" layoutY="150.0" />
+             <DatePicker fx:id="timeForSendOnGSU" layoutX="247.0" layoutY="150.0" />
+             <DatePicker fx:id="timeForSendOnBelstat" layoutX="476.0" layoutY="150.0" />
+             <Label layoutX="69.0" layoutY="21.0" text="Выберите форму" />
+             <Label layoutX="59.0" layoutY="105.0" text="Срок предоставления" />
+             <Label layoutX="65.0" layoutY="122.0" text="для респондентов" />
+             <Label layoutX="294.0" layoutY="105.0" text="Дата передачи на" />
+             <Label layoutX="334.0" layoutY="122.0" text="ГСУ" />
+             <Label layoutX="522.0" layoutY="105.0" text="Дата передачи" />
+             <Label layoutX="534.0" layoutY="122.0" text="на Белстат" />
+             <Label layoutX="69.0" layoutY="64.0" text="Выберите период" />
+             <ComboBox fx:id="comboPeriod" layoutX="268.0" layoutY="60.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

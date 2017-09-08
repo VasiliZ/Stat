@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.todo.controllers.ViewData">
+   <children>
+      <Button layoutX="1005.0" layoutY="471.0" mnemonicParsing="false" onAction="#close" prefHeight="68.0" prefWidth="117.0" text="Выход" />
+      <Button layoutX="849.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleEditData" prefHeight="68.0" prefWidth="117.0" text="Править" />
+      <Button layoutX="695.0" layoutY="471.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="117.0" text="Добавить" />
+      <TableView fx:id="table" prefHeight="400.0" prefWidth="1200.0">
+          <columns>
+              <TableColumn fx:id="idXls" prefWidth="75.0" text="№" />
+              <TableColumn fx:id="kod" prefWidth="75.0" text="ЕСН" />
+              <TableColumn fx:id="dateMod" prefWidth="121.0" text="Дата модификации" />
+              <TableColumn fx:id="vidPredst" prefWidth="120.0" text="Вид представления" />
+              <TableColumn fx:id="datefirstPredst" prefWidth="200.0" text="Дата первого представления" />
+              <TableColumn fx:id="lastVidPredst" prefWidth="200.0" text="Последний вид представления" />
+              <TableColumn fx:id="numbOfCorrect" prefWidth="150.0" text="Количество кректировок" />
+              <TableColumn fx:id="firstVidPredst" prefWidth="200.0" text="Первый вид предоставления" />
+              <TableColumn fx:id="numbOfPacket" prefWidth="120.0" text="Номер пачки" />
+              <TableColumn fx:id="statorg" prefWidth="100.0" text="Стат орган" />
+              <TableColumn fx:id="fioSend" prefWidth="150.0" text="Контактная информация" />
+              <TableColumn fx:id="telNumb" prefWidth="100.0" text="тел. номер" />
+              <TableColumn fx:id="email" prefWidth="100.0" text="Email" />
+              <TableColumn fx:id="timeForRespondetn" prefWidth="250.0" text="Дата передачи для респондента" />
+              <TableColumn fx:id="timeToGSU" prefWidth="250.0" text="Дата передачи на ГСУ" />
+              <TableColumn fx:id="timeToBelstat" prefWidth="250.0" text="Дата передачи на Белстат" />
+              <TableColumn fx:id="comment" prefWidth="250.0" text="Комментарий" />
+          </columns>
+      </TableView>
+   </children>
+</AnchorPane>
